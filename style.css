@@ -127,10 +127,10 @@ section {
     background: #00a950;
     border: 1px solid #00a950;
     color: #ffffff;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     font-size: 2rem;
     cursor: pointer;
-    width: 15rem;
+    width: 18rem;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5rem;
@@ -355,41 +355,57 @@ section {
 /* -------muppets------- */
 
 /* -------reviews------- */
+.reviews-container {
+    margin-bottom: 6rem;
+}
+
 .r-content {
     display: flex;
     margin-top: 2rem;
+    margin-top: 2rem;
 }
 
-.title1-reviews {
+.title-reviews {
     display: flex;
     margin-bottom: 2rem;
     padding-bottom: 2rem;
     border-bottom: 2px solid #d99517;
 }
 
-.content1-reviews {
-    margin: 0rem 4rem;
+.title-reviews img {
+    margin-left: 2rem;
+}
+
+.content-reviews {
     border: 2px solid #d99517;
     border-radius: 10px;
     padding: 2rem 2rem;
 }
 
-.content1-reviews h1 {
+.content-reviews h1 {
     font-family: "Georama", sans-serif;
     text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
     color: #ffffff;
     font-size: 5rem;
-    margin: 0 1.5rem;
+    margin: 0 2rem;
 }
 
-.content1-reviews p {
+.content-reviews h2 {
+    font-family: "Georama", sans-serif;
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    color: #00a950;
+    font-size: 3.6rem;
+}
+
+.content-reviews p {
     color: #ffffff;
     text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
     font-size: 1.8rem;
 }
 
 .poster img {
+    margin-right: 4rem;
     border-radius: 10px;
-    box-shadow: 5px 5px 15px rgba(0, 169, 80, 0.3);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 /* -------reviews------- */
