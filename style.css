@@ -1,4 +1,4 @@
-/* -------geral------- */
+/*   geral   */
 :root {
     --bg: #FCAD1A;
     --black: #000000;
@@ -6,10 +6,6 @@
     --yellow: #fdd106;
     font-size: 10px
 }
-
-::-webkit-scrollbar{
-    display: none;
-} 
 
 * {
     margin: 0;
@@ -160,11 +156,11 @@ section {
     text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
     border-bottom: 5px solid #00a950;
 }
-/* -------geral------- */
+/*   geral   */
 
 
 
-/* -------home------- */
+/*   home   */
 .btn-home {
     font-family: "Georama", sans-serif;
     background: #00a950;
@@ -209,11 +205,11 @@ section {
     line-height: 1.8;
     padding: 1rem 0;
 }
-/* -------home------- */
+/*   home   */
 
 
 
-/* -------about------- */
+/*   about   */
 .about-container {
     padding-bottom: 6rem;
 }
@@ -295,11 +291,11 @@ section {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
 }
-/* -------about------- */
+/*   about   */
 
 
 
-/* -------muppets------- */
+/*   muppets   */
 .muppets-container {
     padding-bottom: 6rem;
 }
@@ -352,9 +348,11 @@ section {
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
-/* -------muppets------- */
+/*   muppets   */
+ 
 
-/* -------reviews------- */
+
+/*   reviews   */
 .reviews-container {
     margin-bottom: 6rem;
 }
@@ -407,4 +405,4 @@ section {
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
-/* -------reviews------- */
+/*   reviews   */
