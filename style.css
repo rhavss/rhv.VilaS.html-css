@@ -140,16 +140,16 @@ section {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-.titule {
+.title {
     color: #ffffff;
-    padding-top: 15rem;
+    margin-top: 16rem;
     padding-bottom: 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.titule p {
+.title p {
     font-family: "Georama", sans-serif;
     font-size: 7rem;
     border-bottom: 5px solid #00a950;
@@ -193,17 +193,15 @@ section {
 
 .content {
     align-items: center;
-    max-width: 100rem;
     margin-right: 75rem;
+    margin-top: 2.5rem;
 }
 
 .content p {
     color: #ffffff;
     text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
     font-size: 2rem;
-    font-weight: 100;
-    line-height: 1.8;
-    padding: 1rem 0;
+    padding: 2rem 0;
 }
 /*   home   */
 
@@ -211,85 +209,68 @@ section {
 
 /*   about   */
 .about-container {
-    padding-bottom: 6rem;
+    margin-bottom: 6rem;
 }
 
 .about-container section {
     display: flex;
     align-items: center;
+    margin-bottom: 2rem;
 }
 
-.content-about2 {
-    padding-top: 3rem;
+.content-about1, .content-about2, .content-about3 {
+    z-index: 1;
 }
 
-.content-about1 h2 {
+.content-about1, .content-about3 {
+    padding-bottom: 3rem;
+}
+
+.content-about1 h2, .content-about2 h2, .content-about3 h2 {
     font-family: "Georama", sans-serif;
     text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
     color: #ffffff;
     font-size: 6rem;
-    font-weight: 100;
-    line-height: 1.8;
-    padding-left: 21.5rem;
-    max-width: 100rem;
+    border-bottom: 2px solid #00a950;
+    padding: 1rem 2rem;
 }
 
-.content-about2 h2 {
-    font-family: "Georama", sans-serif;
-    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
-    color: #ffffff;
-    font-size: 6rem;
-    font-weight: 100;
-    line-height: 1.8;
-    padding-left: 19rem;
-    max-width: 100rem;
-}
-
-.content-about3 h2 {
-    font-family: "Georama", sans-serif;
-    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
-    color: #ffffff;
-    font-size: 6rem;
-    font-weight: 100;
-    line-height: 1.8;
-    padding-left: 23rem;
-    max-width: 100rem;
-}
-
-.content-about1 p, .content-about3 p {
+.content-about1 p, .content-about2 p, .content-about3 p {
     color: #ffffff;
     text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
     font-size: 2rem;
-    font-weight: 100;
-    line-height: 1.8;
-    padding-left: 6rem;
-    max-width: 100rem;
-    padding-top: 3rem;
+    padding-top: 2rem;
+}
+
+.content-about1 p {
+    margin-right: 7rem;
 }
 
 .content-about2 p {
-    color: #ffffff;
-    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-    font-size: 2rem;
-    font-weight: 100;
-    line-height: 1.8;
-    padding-right: 5rem;
-    max-width: 100rem;
-    padding-top: 3rem;
+    margin-right: 12rem;
 }
 
-.image1 {
-    padding-top: 3rem;
+.content-about3 p {
+    margin-right: 18rem;
 }
 
-.image2, .image3 {
-    padding-top: 6rem;
+.green-line-a {
+    position: absolute;
+    background-color: #00a950;
+    border-bottom-left-radius: 18px;
+    border-top-left-radius: 18px;
+    padding: 10rem 20rem 10rem 5rem;
+    margin-left: 80rem;
+    z-index: 0;
 }
 
-.image1 img, .image2 img, .image3 img {
-    border: 10px solid #00a950;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
+.green-line-a p, .green-line-a h2 {
+    visibility: hidden;
+}
+
+.image-a {
+    z-index: 1;
+    padding-top: 2rem;
 }
 /*   about   */
 
@@ -297,7 +278,8 @@ section {
 
 /*   muppets   */
 .muppets-container {
-    padding-bottom: 6rem;
+    margin-bottom: 6rem;
+    margin-top: 4rem;
 }
 
 .muppets-container section {
@@ -306,7 +288,7 @@ section {
     padding: 6rem 0;
 }
 
-.green-line {
+.green-line-m {
     position: absolute;
     background-color: #00a950;
     border-bottom-left-radius: 18px;
@@ -316,7 +298,7 @@ section {
     z-index: 0;
 }
 
-.green-line p, .green-line h2 {
+.green-line-m p, .green-line-m h2 {
     visibility: hidden;
 }
 
@@ -340,11 +322,11 @@ section {
     line-height: 1.5;
 }
 
-.imagem {
+.image-m {
     z-index: 1;
 }
 
-.imagem img {
+.image-m img {
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
@@ -355,6 +337,7 @@ section {
 /*   reviews   */
 .reviews-container {
     margin-bottom: 6rem;
+    margin-top: 4rem;
 }
 
 .r-content {
@@ -367,7 +350,7 @@ section {
     display: flex;
     margin-bottom: 2rem;
     padding-bottom: 2rem;
-    border-bottom: 2px solid #d99517;
+    border-bottom: 2px solid #00a950;
 }
 
 .title-reviews img {
@@ -375,7 +358,8 @@ section {
 }
 
 .content-reviews {
-    border: 2px solid #d99517;
+    background-color: #ffa600;
+    border: 2px solid #ffa600;
     border-radius: 10px;
     padding: 2rem 2rem;
 }
