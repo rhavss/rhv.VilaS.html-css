@@ -151,7 +151,7 @@ section {
 
 .title p {
     font-family: "Georama", sans-serif;
-    font-size: 7rem;
+    font-size: 7.5rem;
     border-bottom: 5px solid #00a950;
     text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
     border-bottom: 5px solid #00a950;
@@ -230,7 +230,7 @@ section {
     font-family: "Georama", sans-serif;
     text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
     color: #ffffff;
-    font-size: 6rem;
+    font-size: 6.5rem;
     border-bottom: 2px solid #00a950;
     padding: 1rem 2rem;
 }
@@ -251,7 +251,7 @@ section {
 }
 
 .content-about3 p {
-    margin-right: 18rem;
+    margin-right: 10rem;
 }
 
 .green-line-a {
@@ -259,7 +259,7 @@ section {
     background-color: #00a950;
     border-bottom-left-radius: 18px;
     border-top-left-radius: 18px;
-    padding: 10rem 20rem 10rem 5rem;
+    padding: 10rem 30rem 10rem 5rem;
     margin-left: 80rem;
     z-index: 0;
 }
