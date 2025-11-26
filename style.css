@@ -390,3 +390,57 @@ section {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 /*   reviews   */
+
+
+
+/*    play    */
+.play-container {
+    margin-bottom: 6rem;
+    margin-top: 3rem;   
+}
+
+.p-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.p-content img {
+    padding-left: 24rem;
+    margin-right: 3.2rem;
+    z-index: 1;
+}
+
+.play-c {
+    z-index: 1;
+}
+
+.p-content h2 {
+    font-family: "Georama", sans-serif;
+    color: #ffffff;
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    font-size: 5rem;
+    padding-bottom: 1.5rem; 
+    z-index: 1;
+}
+
+.p-content p {
+    color: #ffffff;
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    font-size: 1.8rem;
+    margin-right: 28rem;
+    z-index: 1;
+}
+
+.green-line-p {
+    position: absolute;
+    background-color: #00a950;
+    border-radius: 18px;
+    padding: 7rem 20rem 7rem 20rem;
+    z-index: 0;
+}
+
+.green-line-p p, .green-line-p h2 {
+    visibility: hidden;
+}
+/*    play    */
