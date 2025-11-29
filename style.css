@@ -78,12 +78,9 @@ section {
 }
 
 .footer {
-    bottom: 0;
-    left: 0;
-    right: 0;
     z-index: 99;
     background: #fdd106;
-    border-top: 2px solid #fdd106;
+    border: 2px solid #fdd106;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
@@ -106,12 +103,22 @@ section {
     color: #00a950;
     text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
     font-size: 1.4rem;
+    margin-left: 4rem;
 }
 
 .navfooter a {
     padding: 0 1.04rem;
     color: #00a950;
     cursor: pointer;
+}
+
+.foot {
+    margin-bottom: 5.2rem;
+    margin-right: 16rem;
+}
+
+.foot img {
+    position: absolute;
 }
 
 .instagram, .youtube {
@@ -358,13 +365,12 @@ section {
 }
 
 .content-reviews {
-    background-color: #ffa200;
+    background-color: #ffac1d;
     border-radius: 10px;
-    border-bottom: 6px solid #00a950;
-    border-left: 6px solid #00a950;
-    border-top: 1.5px solid #00a950;
-    border-right: 1.5px solid #00a950;
-    padding: 2rem 2rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
+    border-left: 4px solid #00a950;
+    padding: 2.2rem 2rem 1rem 2rem;
+    z-index: 1;
 }
 
 .content-reviews h1 {
@@ -387,10 +393,28 @@ section {
     font-size: 1.8rem;
 }
 
-.poster img {
-    margin-right: 4rem;
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+.space {
+    font-size: 1;
+    visibility: hidden;
+}
+
+.poster {
+    margin: 0 5rem 0 2.5rem;
+    z-index: 1;
+}
+
+.green-line-r {
+    position: absolute;
+    background-color: #00a950;
+    border-bottom-left-radius: 18px;
+    border-top-left-radius: 18px;
+    padding: 7rem 30rem 7rem 5rem;
+    margin: 7.5rem 80rem 0 0;
+    z-index: 0;
+}
+
+.green-line-r p, .green-line-r h2 {
+    visibility: hidden;
 }
 /*   reviews   */
 
