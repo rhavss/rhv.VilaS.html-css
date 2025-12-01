@@ -64,17 +64,27 @@ section {
     margin-top: 0.6rem;
 }
 
-.login a {
+.game a {
     font-family: "Georama", sans-serif;
-    font-size: 2rem;
-    padding: 0.5rem 1rem;
+    font-size: 2.15rem;
+    padding: 0.55rem 1.05rem;
     color: #00a950;
     background-color: #ffffff;
     border-radius: 10px;
 }
 
-.login a:hover {
+.game a:hover {
     color: #fdd106;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.game .active {
+    color: #eb4d48;
+}
+
+.game .active:hover {
+    color: #fe8580;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
 }
 
 .footer {
@@ -94,22 +104,26 @@ section {
 
 .navfooter p {
     font-family: "Georama", sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.65rem;
     color: #00a950;
     text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.03);
+    padding-top: 0.3rem;
+}
+
+.navfooter a, .navfooter img {
+    margin: 0.4rem 0.6rem 0 0;
+    cursor: pointer;
 }
 
 .rights {
-    color: #00a950;
-    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
-    font-size: 1.4rem;
-    margin-left: 4rem;
+    justify-items: center;
 }
 
-.navfooter a {
-    padding: 0 1.04rem;
+.rights p {
     color: #00a950;
-    cursor: pointer;
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    font-size: 1.36rem;
+    padding-top: 0.3rem;
 }
 
 .foot {
@@ -119,10 +133,6 @@ section {
 
 .foot img {
     position: absolute;
-}
-
-.instagram, .youtube {
-    padding-top: 1rem;
 }
 
 .btn-end {
@@ -161,7 +171,6 @@ section {
     font-size: 7.5rem;
     border-bottom: 5px solid #00a950;
     text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
-    border-bottom: 5px solid #00a950;
 }
 /*   geral   */
 
@@ -292,7 +301,7 @@ section {
 .muppets-container section {
     display: flex;
     align-items: center;
-    padding: 6rem 0;
+    padding: 7rem 0;
 }
 
 .green-line-m {
@@ -421,15 +430,11 @@ section {
 
 
 /*    play    */
-.play-container {
-    margin-bottom: 6rem;
-    margin-top: 3rem;   
-}
-
 .p-content {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 4.5rem;  
 }
 
 .p-content img {
@@ -460,7 +465,7 @@ section {
     z-index: 1;
 }
 
-.green-line-p {
+.green-line-p1 {
     position: absolute;
     background-color: #00a950;
     border-radius: 18px;
@@ -468,7 +473,156 @@ section {
     z-index: 0;
 }
 
-.green-line-p p, .green-line-p h2 {
+.green-line-p1 p, .green-line-p1 h2 {
     visibility: hidden;
 }
+
+.green-line-p2 {
+    position: absolute;
+    background-color: #00a950;
+    border-bottom-left-radius: 18px;
+    border-top-left-radius: 18px;
+    padding: 4rem 11rem 4rem 5rem;
+    margin-right: 7rem;
+    z-index: 0;
+}
+
+.green-line-p2 p, .green-line-p2 h2 {
+    visibility: hidden;
+}
+
+.content-play {
+    width: 40rem;
+    background-color: #ffac1d;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
+    border-left: 4px solid #00a950;
+    padding: 2rem 2rem 2rem 2rem;
+    margin-left: 2rem;
+    z-index: 1;
+}
+
+.content-play h1 {
+    font-family: "Georama", sans-serif;
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    font-size: 5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #00a950;
+}
+
+.content-play p {
+    color: #ffffff;
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    font-size: 1.8rem;
+    padding: 1rem 0;
+}
+
+.btn-play {
+    font-family: "Georama", sans-serif;
+    background: #00a950;
+    border: 1px solid #00a950;
+    color: #ffffff;
+    padding: 1rem 1.6rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.btn-play:hover {
+    color: #fdd106;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.conj-slides {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide {
+    display: flex;
+    margin: 3rem 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide img {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.slider {
+    margin: 5.5rem 0 7rem 0;
+}
 /*    play    */
+
+
+
+/*    game    */
+.game-content {
+    margin: 14rem 5rem 6rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 5rem;
+}
+
+.game-container h1 {
+    text-align: center;
+    font-family: "Georama", sans-serif;
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    font-size: 5rem;
+    padding-bottom: 1rem;
+    border-bottom: 5px solid #00a950;
+    margin-bottom: 2rem;
+}
+
+.playgame {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.playgame button{
+    width: 125px;
+    height: 125px;
+    margin: 1.5rem;
+    cursor: pointer;
+    font-size: 10rem;
+    background-color: #FCAD1A;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 18px;
+}
+
+.playgame button:hover {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.game-julia {
+    margin: 1rem 9rem 8rem 3rem;
+    z-index: 1;
+}
+
+.green-line-g {
+    position: absolute;
+    background-color: #00a950;
+    border-bottom-right-radius: 18px;
+    border-top-right-radius: 18px;
+    padding: 10rem 30rem 10rem 15rem;
+    margin: 0 75rem 8rem 0;
+    z-index: 0;
+}
+
+.green-line-g p, .green-line-g h2 {
+    visibility: hidden;
+}
+/*    game    */
