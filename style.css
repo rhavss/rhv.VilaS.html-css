@@ -176,7 +176,7 @@ section {
 
 
 
-/*   home   */
+/*   home (index)   */
 .btn-home {
     font-family: "Georama", sans-serif;
     background: #00a950;
@@ -219,7 +219,7 @@ section {
     font-size: 2rem;
     padding: 2rem 0;
 }
-/*   home   */
+/*   home (index)   */
 
 
 
@@ -563,7 +563,7 @@ section {
 
 /*    game    */
 .game-content {
-    margin: 17rem 5rem 0 0;
+    margin: 13rem 5rem 0 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -573,7 +573,7 @@ section {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    margin: 0 0 12rem 5rem;
+    margin: 7.5rem 0 12rem 5rem;
 }
 
 .game-container h1 {
@@ -581,7 +581,7 @@ section {
     font-family: "Georama", sans-serif;
     text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
     color: #ffffff;
-    font-size: 5rem;
+    font-size: 5.2rem;
     padding-bottom: 1rem;
     border-bottom: 5px solid #00a950;
     margin-bottom: 2rem;
@@ -593,9 +593,9 @@ section {
 }
 
 .playgame button{
-    width: 125px;
-    height: 125px;
-    margin: 1.5rem;
+    width: 140px;
+    height: 140px;
+    margin: 1.2rem;
     cursor: pointer;
     font-size: 8rem;
     color: #eb4d48;
@@ -610,27 +610,41 @@ section {
 }
 
 .game-julia {
-    margin: 1rem 9rem 8rem 3rem;
+    margin: 0 9rem 8rem 3rem;
     z-index: 1;
 }
 
-.green-line-g {
+.green-line-g1 {
     position: absolute;
     background-color: #00a950;
     border-bottom-right-radius: 18px;
     border-top-right-radius: 18px;
-    padding: 10rem 30rem 10rem 30rem;
-    margin: 0 90rem 8rem 0;
+    padding: 9rem 30rem 9rem 30rem;
+    margin: 0 90rem 22rem 0;
     z-index: 0;
 }
 
-.green-line-g p, .green-line-g h2 {
+.green-line-g1 p, .green-line-g1 h2 {
+    visibility: hidden;
+}
+
+.green-line-g2 {
+    position: absolute;
+    background-color: #00a950;
+    border-bottom-right-radius: 18px;
+    border-top-right-radius: 18px;
+    padding: 3rem 20rem 3rem 20rem;
+    margin: 58rem 100rem 22rem 0;
+    z-index: 0;
+}
+
+.green-line-g2 p, .green-line-g2 h2 {
     visibility: hidden;
 }
 
 .player {
     width: 50rem;
-    margin: 5rem 0 0 0;
+    
     background-color: #ffac1d;
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
@@ -650,11 +664,12 @@ section {
     color: #ffffff;
     text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
     font-size: 1.8rem;
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
     border-bottom: 2px solid #00a950;
 }
 
 .btn-game {
+    display: flex;
     font-family: "Georama", sans-serif;
     background: #00a950;
     border: 1px solid #00a950;
@@ -665,8 +680,6 @@ section {
     width: 14rem;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5rem;
-    margin: none;
     display: block;
     border-radius: 10px;
     text-align: center;

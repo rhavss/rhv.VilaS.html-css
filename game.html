@@ -21,7 +21,7 @@
             </a>
 
             <nav class="navbar">
-                <a href="home.html">INÍCIO</a>
+                <a href="index.html">INÍCIO</a>
                 <a href="about.html">SOBRE</a>
                 <a href="muppets.html">MUPPETS</a>
                 <a href="reviews.html">AVALIAÇÕES</a>
@@ -36,7 +36,12 @@
 
     <div class="game-content">
 
-        <div class="green-line-g">
+        <div class="green-line-g1">
+            <h2>GARIBALDO</h2>
+            <p>"Com 2,49 metros de altura, o Garibaldo é um pássaro amarelo de 6 anos e meio, muito dócil."</p>
+        </div>
+
+        <div class="green-line-g2">
             <h2>GARIBALDO</h2>
             <p>"Com 2,49 metros de altura, o Garibaldo é um pássaro amarelo de 6 anos e meio, muito dócil."</p>
         </div>
@@ -45,7 +50,7 @@
             <img height="430" width="480" src="img/julia-game.png" alt="game">
 
             <div class="player">
-                <p class="talk">"Jogo da velha é um dos jogos favoritos de Júlia, ela adora raunir seus amigos para jogar várias vezes"</p>
+                <p class="talk">"O Jogo da Velha é um dos jogos favoritos de Júlia, ela adora reunir seus amigos para jogar inúmeras vezes"</p>
                 <h1 class="current-player"></h1>
             </div>
         </div>
@@ -88,8 +93,10 @@
 
         checkResult();
 
-        currentPlayer = currentPlayer === "X" ? "O" : "X";
-        playerDisplay.innerText = `Jogador atual: ${currentPlayer}`;
+        if (gameActive) {
+            currentPlayer = currentPlayer === "X" ? "O" : "X";
+            playerDisplay.innerText = `Jogador atual: ${currentPlayer}`;
+        }
         }
 
         function checkResult() {
@@ -107,27 +114,20 @@
         for (let pattern of winPatterns) {
             const [a, b, c] = pattern;
             if (board[a] && board[a] === board[b] && board[a] === board[c]) {
-            endGame(`O jogador ${currentPlayer} venceu!`);
+            endGame(`${currentPlayer}`);
             return;
             }
         }
 
         if (!board.includes("")) {
-            endGame("Empate! Ninguém venceu.");
+            endGame("Empate");
         }
         }
 
-        function endGame(message) {
+        function endGame(winner) {
         gameActive = false;
-        gameActive = false;
-        playerDisplay.innerText = message;
-
-        const restartBtn = document.createElement("button");
-        restartBtn.innerText = "Reiniciar Jogo";
-        restartBtn.classList.add("btn-game");
-        document.querySelector(".game-container").appendChild(restartBtn);
-
-        restartBtn.addEventListener("click", restartGame);
+        playerDisplay.innerText = `Vencedor: ${winner}`;
+        setTimeout(restartGame, 2000);
         }
 
         function restartGame() {
@@ -138,7 +138,6 @@
         playerDisplay.innerText = `Jogador atual: ${currentPlayer}`;
 
         buttons.forEach(btn => (btn.innerText = ""));
-        document.querySelector(".btn-game").remove();
         }
     </script>
 
