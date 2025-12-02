@@ -440,7 +440,7 @@ section {
 .p-content img {
     margin-left: 10rem;
     padding-left: 8rem;
-    margin-right: 3.2rem;
+    margin-right: 3rem;
     z-index: 1;
 }
 
@@ -461,7 +461,7 @@ section {
     color: #ffffff;
     text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
     font-size: 1.8rem;
-    margin-right: 20rem;
+    margin-right: 26rem;
     z-index: 1;
 }
 
@@ -469,7 +469,7 @@ section {
     position: absolute;
     background-color: #00a950;
     border-radius: 18px;
-    padding: 7.5rem 10rem 7.5rem 10rem;
+    padding: 7.5rem 14rem 7.5rem 14rem;
     z-index: 0;
 }
 
@@ -498,7 +498,7 @@ section {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
     border-left: 4px solid #00a950;
     padding: 2rem 2rem 2rem 2rem;
-    margin-left: 2rem;
+    margin-left: 5rem;
     z-index: 1;
 }
 
@@ -628,11 +628,30 @@ section {
     visibility: hidden;
 }
 
-.current-player {
-    font-family:  "Poppins", sans-serif;
+.player {
+    width: 50rem;
+    margin: 5rem 0 0 0;
+    background-color: #ffac1d;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
+    border-left: 4px solid #00a950;
+    padding: 2rem 2rem 2rem 2rem;
+}
+
+.player h1 {
+    font-family: "Georama", sans-serif;
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    font-size: 5rem;
+    margin-top: 1rem;
+}
+
+.player p {
     color: #ffffff;
     text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-    font-size: 3rem;
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #00a950;
 }
 
 .btn-game {
@@ -654,7 +673,7 @@ section {
 }
 
 .btn-game:hover {
-    color: #fdd106;
+    color: #eb4d48;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 /*    game    */

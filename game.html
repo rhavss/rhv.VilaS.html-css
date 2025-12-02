@@ -44,7 +44,10 @@
         <div class="game-julia">
             <img height="430" width="480" src="img/julia-game.png" alt="game">
 
-            <h2 class="current-player"></h2>
+            <div class="player">
+                <p class="talk">"Jogo da velha é um dos jogos favoritos de Júlia, ela adora raunir seus amigos para jogar várias vezes"</p>
+                <h1 class="current-player"></h1>
+            </div>
         </div>
 
         <main class="game-container">
@@ -119,7 +122,6 @@
         gameActive = false;
         playerDisplay.innerText = message;
 
-        // botão reiniciar
         const restartBtn = document.createElement("button");
         restartBtn.innerText = "Reiniciar Jogo";
         restartBtn.classList.add("btn-game");
