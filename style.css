@@ -573,7 +573,7 @@ section {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    margin: 7.5rem 0 12rem 5rem;
+    margin: 4rem 0 12rem 5rem;
 }
 
 .game-container h1 {
@@ -633,7 +633,7 @@ section {
     background-color: #00a950;
     border-bottom-right-radius: 18px;
     border-top-right-radius: 18px;
-    padding: 3rem 20rem 3rem 20rem;
+    padding: 1rem 20rem 1rem 20rem;
     margin: 58rem 100rem 22rem 0;
     z-index: 0;
 }
@@ -644,7 +644,6 @@ section {
 
 .player {
     width: 50rem;
-    
     background-color: #ffac1d;
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
